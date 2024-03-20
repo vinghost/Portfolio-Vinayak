@@ -96,6 +96,18 @@ body {
     animation: fadeInUp 1s ease forwards;
 }
 
+@media only screen and (max-width: 768px) {
+  .intro-text {
+      font-size: 16px; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .intro-text {
+      font-size: 14px; 
+  }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -242,4 +254,22 @@ body {
   #resume {
     background-color: #eaeaea;
   }
+/* resopnsive stlye for prjecct
+@media only screen and (max-width: 768px) {
+  .project {
+      flex-basis: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .project {
+      flex-basis: 100%;
+  }
+  
+  .project h3,
+  .project p {
+      font-size: 14px;
+  }
+}
+
   
