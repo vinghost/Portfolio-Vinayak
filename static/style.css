@@ -1,0 +1,245 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+ background-color:rgba(234, 241, 241, 0.719) ;
+  
+}
+.profile-pic-container {
+    position: relative;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it round */
+    overflow: hidden;
+    border: 2px solid #fff; /* Border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+}
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the entire image fits inside the container while maintaining aspect ratio */
+    border-radius: 50%; /* Ensure the image remains round */
+}
+.profile-pic-background{
+    object-fit: contain;
+    width: 50px; 
+    height: auto;
+}
+
+
+
+
+ 
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #da6624;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #999;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  #about {
+    text-align: center;
+    padding: 5px 0;
+}
+
+#about h2 {
+    display: flex;
+    place-content: center;
+    
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px;
+    color: rgb(15, 15, 15);
+    background-color: rgba(0,0,0,0.0);
+    line-height: 1.6;
+}
+
+/* Animation */
+.intro-text p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+  
+  #projects {
+    background-color: rgba(0,0,0,0.0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+.project {
+  flex: 0 1 calc(45% - 20px); 
+  margin: 10px;
+  background-color: rgba(155, 5, 5, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.5s;
+  animation: myAnim 2.5s ease-in-out; 
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: initial ;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project:hover {
+  transform: translateY(-22px);
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.project h3,
+.project p {
+  padding: 10px;
+}
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    color: rgb(5, 5, 5);
+   
+    margin-bottom: 20px;
+    
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    margin: 0 10px;
+    position: relative;
+}
+
+.social-link img {
+    width: 50px; 
+    height: auto;
+}
+
+.social-link p {
+    
+    background-color: rgba(165, 109, 44, 0.856);
+    color: #fff;
+   padding: 5px 10px;
+   border-radius: 5px;
+   font-size: 14px;
+}
+.social-link img:hover {
+    animation: vibration 0.5s infinite; 
+}
+
+/* Vibration animation */
+@keyframes vibration {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px) translateY(-2px); }
+    50% { transform: translateX(2px) translateY(2px); }
+    75% { transform: translateX(-2px) translateY(-2px); }
+    100% { transform: translateX(2px) translateY(2px); }
+}
+
+  
+  #resume {
+    background-color: #eaeaea;
+  }
+  
